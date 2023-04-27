@@ -38,7 +38,6 @@ app.get("/vapidPublicKey", function (req, res) {
 })
 
 app.post("/sendNotification", function (req, res) {
-  console.log("body", req.body)
   const subscription = req.body.subscription
   const payload = "" + req.body.id
   const options = {
